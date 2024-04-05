@@ -14,7 +14,7 @@ class GestorElementos<T: ElementoBiblioteca> : IGestorElementos<T> {
 
     override fun eliminar(id: String): Boolean = elementos.removeAll { it.id == id }
 
-    override fun buscar(id: String, estado: Estado): T? = elementos.find { it.id == id }
+    override fun buscar(id: String): T? = elementos.find { it.id == id }
 
     override fun filtrarPorCriterio(criterio: (T) -> Boolean): List<T> = elementos.filter(criterio)
 

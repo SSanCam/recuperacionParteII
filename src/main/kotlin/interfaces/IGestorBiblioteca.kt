@@ -22,9 +22,9 @@ interface IGestorBiblioteca {
 
     fun devolverElemento(usuarioId: Int, elementoId: String)
 
-    fun consultarDisponibilidadElemento(id: String, estado: Estado)
+    fun consultarDisponibilidadElemento(id: String)
 
-    fun elementosCatalogo(estado: Estado): List<ElementoBiblioteca>
+    fun elementosCatalogo(): List<ElementoBiblioteca>
 
     fun elementosPrestadosUsuario(usuarioId: Int) : List<ElementoBiblioteca>
 

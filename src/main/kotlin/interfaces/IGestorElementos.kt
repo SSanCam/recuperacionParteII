@@ -12,7 +12,7 @@ interface IGestorElementos<T> {
 
     fun eliminar(id: String): Boolean
 
-    fun buscar(id: String, estado: Estado): T?
+    fun buscar(id: String): T?
 
     fun obtenerElementos(id: String): List<T>
 
